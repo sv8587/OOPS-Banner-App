@@ -28,7 +28,7 @@ public static void main(String[] args) {
  *
  * @author Developer
  * @version 3.0
- */
+ 
 
 public class OOPSBannerApp {
 
@@ -76,4 +76,72 @@ public class OOPSBannerApp {
                 "**          ",
                 "  *****   "));
     }
+} */
+
+/**
+ * OOPSBannerApp UC4 – Render OOPS using String Array and Loop
+ *
+ * Improves UC3 by storing banner lines in a String array
+ * and printing them using a for-each loop.
+ *
+ * @author Developer
+ * @version 4.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        // Step 1: Create array for 7 banner lines
+        String[] lines = new String[7];
+
+        // Step 2: Populate each index using String.join()
+        lines[0] = String.join(" ",
+                "  *****  ",
+                "  *****  ",
+                "  ****** ",
+                "  *****  ");
+
+        lines[1] = String.join(" ",
+                " **   ** ",
+                " **   ** ",
+                " **   ** ",
+                " **   ** ");
+
+        lines[2] = String.join(" ",
+                "**     **",
+                "**     **",
+                "**     **",
+                "**       ");
+
+        lines[3] = String.join(" ",
+                "**     **",
+                "**     **",
+                "******   ",
+                " *****   ");
+
+        lines[4] = String.join(" ",
+                "**     **",
+                "**     **",
+                "**        ",
+                "     **   ");
+
+        lines[5] = String.join(" ",
+                " **   ** ",
+                " **   ** ",
+                "**         ",
+                " **   **  ");
+
+        lines[6] = String.join(" ",
+                "  *****  ",
+                "  *****  ",
+                "**          ",
+                "  *****   ");
+
+        // Step 3: Use for-each loop to print
+        for (String line : lines) {
+            System.out.println(line);
+        }
+    }
 }
+
