@@ -86,7 +86,7 @@ public class OOPSBannerApp {
  *
  * @author Developer
  * @version 4.0
- */
+ 
 
 public class OOPSBannerApp {
 
@@ -144,4 +144,71 @@ public class OOPSBannerApp {
         }
     }
 }
+*/
 
+/**
+ * OOPSBannerApp UC5 – Render OOPS using Inline Array Initialization
+ *
+ * Improves UC4 by declaring and initializing the String array
+ * in a single statement using String.join().
+ *
+ * @author Developer
+ * @version 5.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        // Inline declaration + initialization
+        String[] lines = {
+
+                String.join(" ",
+                        "  *****  ",
+                        "  *****  ",
+                        "  ****** ",
+                        "  *****  "),
+
+                String.join(" ",
+                        " **   ** ",
+                        " **   ** ",
+                        " **   ** ",
+                        " **   ** "),
+
+                String.join(" ",
+                        "**     **",
+                        "**     **",
+                        "**     **",
+                        "**       "),
+
+                String.join(" ",
+                        "**     **",
+                        "**     **",
+                        "******   ",
+                        " *****   "),
+
+                String.join(" ",
+                        "**     **",
+                        "**     **",
+                        "**        ",
+                        "     **   "),
+
+                String.join(" ",
+                        " **   ** ",
+                        " **   ** ",
+                        "**         ",
+                        " **   **  "),
+
+                String.join(" ",
+                        "  *****  ",
+                        "  *****  ",
+                        "**          ",
+                        "  *****   ")
+        };
+
+        // for-each loop to print
+        for (String line : lines) {
+            System.out.println(line);
+        }
+    }
+}
